@@ -1,0 +1,19 @@
+<head>
+    <title>GPT Search Engine</title>
+</head>
+
+<body>
+    <h1>GPT Search Engine</h1>
+    <form action="/index/engine" method="POST">
+        <label for="prompt">Enter a prompt:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <br>
+        <input type="submit" value="Generate Results">
+    </form>
+
+    <% if (typeof answer !== 'undefined') { %>
+        <h2>answer</h2>
+        <p><%= answer %></p>
+      <% } %>
+</body>
+
